@@ -1,0 +1,156 @@
+:root {
+    --groen: #2a5a43;
+    --beige: #e7e6d7; 
+    --lysgroen: #5c7860;
+    --gul: #f9eb9e;
+  }
+
+body {
+    width: 375px;
+    height: auto;
+    margin: 0%;
+    background-color: var(--beige);
+}
+
+.header {
+    width: 100%;
+    height: 12em;
+    background-image: url(/images/forsideblomster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    z-index: 100;
+}
+
+
+.boks {
+    background-color: var(--groen);
+    color: var(--groen);
+    opacity: 80%;
+    height: 12em;
+    width: 45%;
+    position:absolute;
+    top: 0%;
+}
+
+.overskrift1 {
+    color: var(--beige);
+    font: 'HWT Artz';
+    letter-spacing: 2px;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    font-family: 'hwt-artz',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4em;
+    margin-bottom: 0%;
+}
+
+.infoboks {
+    width: 100%;
+    background-color: var(--groen);
+}
+
+h2 {
+    margin-top: 0%;
+    padding-top: 10%;
+    padding-left: 8%;
+    text-align: left;
+    font-family: 'hwt-artz',sans-serif;
+    color: var(--gul);
+}
+
+p {
+    padding: 8%;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: var(--beige);
+    font-family: 'du nord';
+}
+
+
+
+.sarabillede {
+    width: 80%;
+    padding: 10%;
+}
+
+.navigation-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-a {
+    margin: 5%;
+    margin-top: 0%; 
+}
+
+.navigation {
+    background-color: var(--groen);
+    border: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 0%;
+    box-shadow: -5px 5px 5px grey;
+    position: relative;
+}
+
+.nav-h {
+    color: var(--gul);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'hwt-artz',sans-serif;
+    font-size: 2em;
+    text-align: left;
+    margin: 0%;
+    z-index: 10;
+
+}
+
+.nav-illu {
+    position: absolute;
+    right: 11px;
+    bottom: -1.9px;
+}
+
+
+.footer {
+    position: relative;
+    display: flex;
+}
+
+.footer-boks {
+    width: 100%;
+    height: 100px;
+    background-color: var(--groen);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.okologi {
+    width: 10%;
+    height: 40%;
+}
+
+.kontakt {
+    color: var(--beige);
+    font-family: 'du nord';
+    font-size: 0.9em;
+    width: 90%;
+}
+
+.somelogo {
+    width: 8%;
+}
+
+
