@@ -5,6 +5,11 @@
     --gul: #f9eb9e;
   }
 
+@font-face {
+    font-family: 'du nord';
+    src: url(/fonts/DuNord-Regular.otf);
+  }
+
 body {
     width: 100%;
     height: auto;
@@ -15,20 +20,21 @@ body {
 .header {
     width: 100%;
     height: 12em;
-    background-image: url(/images/forsideblomster.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.forsidebillede {
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
     width: 20%;
-    max-width: 150px;
+    max-width: 100px;
     position: absolute;
     left: 5%;
     top: 2%;
     z-index: 100;
 }
-
 
 .boks {
     background-color: var(--groen);
@@ -46,15 +52,20 @@ body {
     letter-spacing: 2px;
 
     width: 100%;
-    height: 100%;
     z-index: 200;
     position: absolute;
     text-align: center;
+    top: 5%;
     padding-top: 10%;
+    margin: 0%;
     font-family: 'hwt-artz',sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 4em;
+}
+
+.motto {
+    display: none;
 }
 
 .infoboks {
@@ -82,7 +93,7 @@ p {
     margin-top: 0%;
     margin-bottom: 0%;
     color: var(--beige);
-    font-family: 'du nord';
+    font-family:'du nord';
 }
 
 
@@ -124,14 +135,56 @@ p {
     text-align: left;
     margin: 0%;
     z-index: 10;
-
 }
 
-.nav-illu {
+.hover-tekst {
+    width: 100%;
+    color: var(--beige);
+    font-family: 'adobe-handwriting-ernie', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.popup {
+    display: none;
+}
+
+.hover-farve {
+    color: var(--groen);
+}
+
+.popup-farve {
+    border: solid var(--beige) 2px;
+}
+
+.nav-illu1 {
+    position: absolute;
+    transform: scale(120%);
+    right: 20px;
+    bottom: 20px;
+}
+
+.nav-illu2 {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+.nav-illu3 {
     position: absolute;
     right: 11px;
-    bottom: -1.9px;
+    bottom: -3px;
 }
+
+.nav-illu4 {
+    position: absolute;
+    transform: scale(80%);
+    right: 0px;
+    bottom: -20px;
+}
+
 
 
 .footer {
@@ -180,6 +233,11 @@ p {
     .somelogo {
         right: 6em;
     }
+
+    .blomst {
+        max-width: 35%;
+    }
+
 }
 
 
@@ -275,6 +333,10 @@ p {
         width: 40%;
     }
 
+    .overskrift1 {
+        font-size: 5em;
+    }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -293,6 +355,18 @@ p {
 
     .overskrift1 {
         font-size: 8em;
+    }
+
+    .motto {
+        font-family: 'adobe-handwriting-ernie', sans-serif;
+        width: 100%;
+        padding: 0%;
+        position: absolute;
+        text-align: center;
+        z-index: 200;
+        top: 30%;
+        font-size: 2em;
+        display: block;
     }
 
     .sarabillede {
@@ -337,14 +411,32 @@ p {
         font-size: 2em;
     }
 
-    p {
+    .intro {
         font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .hover-tekst {
+        font-size: 1.5em;
+        line-height: 1em;
     }
 
     .nav-a {
         margin-left: 2%;
         margin-right: 2%;
+        margin-bottom: 0%;
     }
+
+
+    .popup {
+        margin-top: 20px;
+        width: 196px;
+        border: solid var(--beige) 1px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    
 
     .footer-p {
         font-size: 1em;
@@ -355,6 +447,15 @@ p {
 
     .header {
         height: 35em;
+    }
+
+    .motto {
+        font-size: 3em;
+        top: 40%;
+    }
+
+    h2 {
+        font-size: 3em;
     }
 
     .infowave {
@@ -368,7 +469,11 @@ p {
 
     .overskrift1 {
         font-size: 12em;
-        padding-top: 5%;
+        padding-top: 10%;
+    }
+
+    .sarabillede {
+        margin-right: 0%;
     }
 
     .bigscreen-flex {
@@ -384,13 +489,23 @@ p {
         font-size: 3em;
     }
 
-    p {
+    .intro {
         line-height: 2em;
     }
 
     .footer-p {
         line-height: 1em;
     }
+
+    .popup {
+        width: 246px;
+    }
+
+    .hover-tekst {
+        line-height: 1em;
+    }
+
+    
 
     .okologi {
         margin-bottom: 0%;
