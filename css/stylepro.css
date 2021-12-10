@@ -133,13 +133,18 @@ p {
     right: 11px;
     bottom: -1.9px;
 }
-
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'hwt-artz',sans-serif;
+    color: #2a5a43;
+}
 
 h3{
     text-align: center;
-    font-size: 2em;
-    font-family: 'hwt-artz',sans-serif;
-    color: #5c7860;
+    font-size: 1.5em;
+    font-family: 'adobe-handwriting-ernie';
+    color: #2a5a43;
     
     
 }
@@ -148,6 +153,12 @@ h4{
     font-family: 'hwt-artz',sans-serif;
     color: #2a5a43;
     
+}
+main{
+    background-image: url(/image/sti.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
 }
 .home-intro{
     margin-top: 20%;
@@ -159,18 +170,20 @@ h4{
     text-align: left;
     
 }
+.btn-txt{
+    margin-bottom: 2%;
+}
 .bil1{
     display: none;
     width: 35%;
 }
 .bil2{
     display: block;
-    width: 90%;
+    width: 85%;
 }
 
 img{
     width: 100%; 
-    margin-top: 8%; 
     border-radius: 20px;
 }
 .process{
@@ -191,7 +204,6 @@ text-align: center;
 .text-pro{
     width: 90%;
     line-height: 1.1;
-    
     margin-top: 2%;
 margin-bottom: 2%;
 }
@@ -213,7 +225,7 @@ margin-bottom: 2%;
 }
 
 .footer-boks {
-    padding-top: 5%;
+    
     width: 100%;
     height: 100px;
     background-color: var(--groen);
@@ -348,6 +360,10 @@ margin-bottom: 2%;
             display: none;
             width: 90%;
         }
+        .home-intro{
+            margin-top: 5%;
+        }
+
     
 }
 
@@ -368,6 +384,21 @@ margin-bottom: 2%;
 
     .kontakt {
         width: 40%;
+    }
+    .col-fade-in {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 1%;
+margin-bottom: 1%;
+        }
+
+    .text-pro{
+        margin: 5%;
+        line-height: 1.1;
+    }
+    .bil1{
+        margin: 5%;
     }
 
 }
@@ -424,7 +455,7 @@ margin-bottom: 2%;
         margin-top: 0%;
     }
     .bil1{
-        width: 70%;
+        width: 85%;
     }
 
 }
@@ -448,7 +479,7 @@ margin-bottom: 2%;
         font-size: 1em;
     }
     .bil1{
-        width: 55%;
+        width: 85%;
     }
 }
 
@@ -497,7 +528,24 @@ margin-bottom: 2%;
         margin-bottom: 0%;
     }
     .bil1{
-        width: 45%;
+        width: 85%;
+        margin: 8%;
     }
+    .text-pro{
+        margin: 8%;
+    }
+    h1{
+        font-size: 4em;
+    }
+    h3{
+        font-size: 2.5em;
+    }
+    h4{
+        font-size: 3em;
+    }
+    .txt{
+        font-size: 1.33em;
+    }
+    
 
 }
