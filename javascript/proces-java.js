@@ -28,17 +28,17 @@ faders.forEach(fader => {
 
 let erPaaPause = true;
 
-let observer = new IntersectionObserver((entries, observer) => { 
+let observer = new IntersectionObserver((entries) => { 
     for (const videosted of entries){ 
         if (videosted.isIntersecting && erPaaPause===true) {  //Hvis videoen er i synsfelt og er på pause...
             video1.play();
-            video1.loop = true // Videoen skal køre i loop
+            video1.loop = true; // Videoen skal køre i loop
             erPaaPause = false;
         } else { // Hvis ikke... så skal videoen pause
             video1.pause();
             erPaaPause = true;
         }
-    };
+    }
 
 }, {threshold:0.5}); //1 = artikel skal være 50% synlig for at tælle med
 
@@ -50,17 +50,17 @@ observer.observe(video1);
 
 let erPaaPause2 = true;
 
-let observer2 = new IntersectionObserver((entries, observer) => {
+let observer2 = new IntersectionObserver((entries) => {
     for (const videosted of entries){ 
         if (videosted.isIntersecting && erPaaPause2===true) { //Hvis videoen er i synsfelt og er på pause...
             video2.play();
-            video2.loop = true
+            video2.loop = true;
             erPaaPause2 = false;
         } else { // Hvis ikke... så skal videoen pause
             video2.pause();
             erPaaPause2 = true;
         }
-    };
+    }
 
 }, {threshold:0.5}); //1 = artikel skal være 50% synlig for at tælle med
 
@@ -72,7 +72,7 @@ observer2.observe(video2);
 
 let erPaaPause3 = true;
 
-let observer3 = new IntersectionObserver((entries, observer) => {
+let observer3 = new IntersectionObserver((entries) => {
     for (const entry of entries){ 
         if (entry.isIntersecting && erPaaPause3===true) { //Hvis videoen er i synsfelt og er på pause...
             video3.play();
@@ -82,7 +82,7 @@ let observer3 = new IntersectionObserver((entries, observer) => {
             video3.pause();
             erPaaPause3 = true;
         }
-    };
+    }
 
 }, {threshold:0.5}); //1 = artikel skal være 50% synlig for at tælle med
 
@@ -94,7 +94,7 @@ observer3.observe(video3);
 
 let erPaaPause4 = true;
 
-let observer4 = new IntersectionObserver((entries, observer) => {
+let observer4 = new IntersectionObserver((entries) => {
     for (const videostart of entries){ 
         if (videostart.isIntersecting && erPaaPause4===true) { //Hvis videoen er i synsfelt og er på pause...
             video4.play();
@@ -104,7 +104,7 @@ let observer4 = new IntersectionObserver((entries, observer) => {
             video4.pause();
             erPaaPause3 = true;
         }
-    };
+    }
 
 }, {threshold:0.5}); //1 = artikel skal være 50% synlig for at tælle med
 

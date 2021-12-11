@@ -54,7 +54,7 @@ body {
 
 .overskrift1 {
     color: var(--beige);
-    font: 'HWT Artz';
+    font-family: 'HWT Artz';
     letter-spacing: 2px;
 
     width: 100%;
@@ -175,7 +175,7 @@ p {
 
 .nav-illu1 {
     position: absolute;
-    transform: scale(120%);
+    transform: scale(1.2);
     right: 20px;
     bottom: 20px;
 }
@@ -194,7 +194,7 @@ p {
 
 .nav-illu4 {
     position: absolute;
-    transform: scale(80%);
+    transform: scale(0.8);
     right: 0px;
     bottom: -20px;
 }
