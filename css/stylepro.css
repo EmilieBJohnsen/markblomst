@@ -50,7 +50,7 @@ body {
 
 .overskrift1 {
     color: var(--beige);
-    font: 'HWT Artz';
+    font-family: 'HWT Artz';
     letter-spacing: 2px;
 
     width: 100%;
@@ -211,7 +211,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 width: 100%;
-margin-top: %;
 margin-bottom: 0%;
 text-align: center;
 }
