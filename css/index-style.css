@@ -10,6 +10,11 @@
     src: url(/fonts/DuNord-Regular.otf);
   }
 
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -18,6 +23,7 @@ body {
 }
 
 .header {
+    position: relative;
     width: 100%;
     height: 12em;
 }
@@ -28,8 +34,8 @@ body {
 }
 
 .logo {
-    width: 20%;
-    max-width: 100px;
+    width: 100%;
+    max-width: 80px;
     position: absolute;
     left: 5%;
     top: 2%;
@@ -123,6 +129,14 @@ p {
     margin-top: 0%;
     box-shadow: -5px 5px 5px grey;
     position: relative;
+}
+
+#tryk {
+    background-color: var(--gul);
+}
+
+#tryk-h {
+    color: var(--groen);
 }
 
 .nav-h {
@@ -342,6 +356,7 @@ p {
 @media only screen and (min-width: 900px) {
 
     .logo {
+        max-width: 150px;
         left: 2%;
     }
 
@@ -451,7 +466,7 @@ p {
 
     .motto {
         font-size: 3em;
-        top: 40%;
+        top: 55%;
     }
 
     h2 {

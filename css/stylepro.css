@@ -5,6 +5,11 @@
     --gul: #f9eb9e;
   }
 
+  @font-face {
+    font-family: 'du nord';
+    src: url(/fonts/DuNord-Regular.otf);
+  }
+
 body {
     width: 100%;
     height: auto;
@@ -16,9 +21,11 @@ body {
 .header {
     width: 100%;
     height: 12em;
-    background-image: url(/image/forsideblomster.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.forsidebillede {
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -47,11 +54,12 @@ body {
     letter-spacing: 2px;
 
     width: 100%;
-    height: 100%;
     z-index: 200;
     position: absolute;
     text-align: center;
+    top: 5%;
     padding-top: 10%;
+    margin: 0%;
     font-family: 'hwt-artz',sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -115,6 +123,12 @@ p {
     position: relative;
 }
 
+.video {
+    border-radius: 20px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
 .nav-h {
     color: var(--gul);
     position: absolute;
@@ -151,22 +165,22 @@ h3{
 h4{
     font-size: 1.5em;
     font-family: 'hwt-artz',sans-serif;
-    color: #2a5a43;
-    
+    color: #2a5a43;   
 }
-main{
-    background-image: url(/image/sti.svg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100%;
+
+.proces-h4 {
+    text-align: left;
+    padding-left:8% ;
 }
+
+
 .home-intro{
     margin-top: 20%;
 }
 .txt{
-    color: black;
-    font-size: 1.2em;
-    font-family: 'du nord';
+    font-size: 1em;
+    font-family:'du nord';
+    color: var(--groen);
     text-align: left;
     
 }
@@ -182,8 +196,9 @@ main{
     width: 85%;
 }
 
-img{
+.procesimg{
     width: 100%; 
+    max-width: 450px;
     border-radius: 20px;
 }
 .process{
@@ -196,8 +211,8 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 width: 100%;
-margin-top: 4%;
-margin-bottom: 4%;
+margin-top: %;
+margin-bottom: 0%;
 text-align: center;
 }
 
@@ -365,6 +380,9 @@ margin-bottom: 2%;
         }
 
     
+        .video {
+            max-height: 400px;
+        }
 }
 
 @media only screen and (min-width: 715px) {
@@ -389,16 +407,21 @@ margin-bottom: 2%;
         display: flex;
         width: 100%;
         align-items: center;
+        justify-content: center;
         margin-top: 1%;
-margin-bottom: 1%;
+        margin-bottom: 1%;
         }
 
     .text-pro{
+        width: 40%;
         margin: 5%;
         line-height: 1.1;
     }
     .bil1{
-        margin: 5%;
+        max-width: 300px;
+        width: 40%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
 }
@@ -470,6 +493,10 @@ margin-bottom: 1%;
         font-size: 1.2em;
     }
 
+    .proces-h4 {
+        font-size: 2em;
+    }
+
     .nav-a {
         margin-left: 2%;
         margin-right: 2%;
@@ -479,8 +506,20 @@ margin-bottom: 1%;
         font-size: 1em;
     }
     .bil1{
-        width: 85%;
+        width: auto;
+        max-width: 550px;
     }
+
+    .video {
+        max-height: 600px;
+    }
+
+    .text-pro {
+        margin: 2%;
+    }
+
+    .txt{
+        font-size: 1.2em;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -529,11 +568,8 @@ margin-bottom: 1%;
     }
     .bil1{
         width: 85%;
-        margin: 8%;
     }
-    .text-pro{
-        margin: 8%;
-    }
+   
     h1{
         font-size: 4em;
     }

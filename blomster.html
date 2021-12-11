@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="blomster. anderledes sortiment. fyn. svendborg. buket. bukketter. miljø. trin for trin. proces. dyrkning. bæredygtighed. genbrug. økologi. guide. plante. planter"/>
+    <meta name="description" content="Blomster. Økologiske og bæredygtige blomster. Miljøet. Selvdyrkede blomster. Økologisk landmand. Permakultur. How to. Tips og tricks. Guides. Guide"/>
     <link href="css/reset.css" rel="reset">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/kalender-style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ehk1rfn.css">
     <title>Markblomst - Guide til bæredygtighed</title>
 </head>
 
-<body>
+<body class="wrapper">
     <header class="header">
         <a href="index.html"><img src="images/logo.png" alt="markblomst logo" class="logo"></a>
         <h1 class="overskrift1">Markblomst</h1>
@@ -44,28 +47,32 @@
     </div>
 
     <div class="navigation-flex">
-        <a href="sortiment.html" class="nav-a"><button class="navigation">
-                <h3 class="nav-h">Mine blomster</h3><img src="images/blomster.svg"
-                    alt="illustration navigation Markblomster" class="nav-illu">
-            </button></a>
-        <a href="proces.html" class="nav-a"><button class="navigation">
-                <h3 class="nav-h">Fra frø<br> til blomst</h3><img src="images/vandkande.svg"
-                    alt="illustration navigation Markblomster" class="nav-illu">
-            </button></a>
-        <a href="ommig.html" class="nav-a"><button class="navigation" type="button">
-                <h3 class="nav-h">Mig og mine budskaber</h3><img src="images/migogminebudskaber.svg"
-                    alt="illustration navigation Markblomster" class="nav-illu">
-            </button></a>
-        <a href="guides.html#tilbage" class="nav-a"><button class="navigation">
-                <h3 class="nav-h">Gør det selv</h3><img src="images/rive.svg" alt="illustration navigation Markblomster"
-                    class="nav-illu">
-            </button></a>
+
+        <div class="nav-a">
+            <a href="sortiment.html#sortiment"  id="navigation1"><button class="navigation"><h3 class="nav-h">Mine blomster</h3><img src="images/blomster.svg" alt="illustration navigation Markblomster" class="nav-illu1"></button></a>
+            <div class="popup" id="popup1"><p class="hover-tekst" id="hover1">Se mit udvalg af blomster og buketter</p></div>
+        </div>
+    
+        <div class="nav-a">
+            <a href="proces.html#proces" id="navigation2"><button class="navigation"><h3 class="nav-h">Fra frø<br> til blomst</h3><img src="images/vandkande.svg" alt="illustration navigation Markblomster" class="nav-illu2"></button></a>
+            <div class="popup" id="popup2"><p class="hover-tekst" id="hover2">Læs om min proces</p></div>
+        </div>
+    
+        <div class="nav-a">
+            <a href="ommig.html#ommig" id="navigation3"><button class="navigation" type="button"><h3 class="nav-h">Mig og mine budskaber</h3><img src="images/migogminebudskaber.svg" alt="illustration navigation Markblomster" class="nav-illu3"></button></a>
+            <div class="popup" id="popup3"><p class="hover-tekst" id="hover3">Læs om mine tanker bag Markblomst</p></div>
+        </div>
+    
+        <div class="nav-a">
+            <a href="guides.html#guides" id="navigation4"><button class="navigation" id="tryk"><h3 class="nav-h" id="tryk-h">Gør det selv</h3><img src="images/rive.svg" alt="illustration navigation Markblomster" class="nav-illu4"></button></a>
+            <div class="popup" id="popup4"><p class="hover-tekst" id="hover4">Gode tips til dine egne blomster</p></div>
+        </div>
     </div>
 
     <a id="dyrke">
     <div class="guides">
     </a>
-            <img src="images/fro.jpg" alt="Frøpose" class="blomsterbillede">
+        <img src="images/fro.jpg" alt="Frøpose" class="guidebillede">
         
         <h4>Tips til selv at dyrke økologisk og bæredygtigt</h4>
 
@@ -118,6 +125,30 @@
             som samtidig er et produkt som er god for dejlige jord?
         </p>
     </div>
+
+    <article class="kalender">
+        <h2 class="kalender-overskrift">Kalender</h2>
+        
+        <div class="kalender-flex">
+        
+        <div class="kalender-boks">
+            <div class="kalender-dato"><h3 class="kalender-h3">Hver lørdag</h3></div>
+            <p class="kalender-sted">
+                Svendborg torv<br>
+                Kl. 12 - 16 <br>
+            </p>
+        </div>
+        
+        <div class="kalender-boks">
+            <div class="kalender-dato"><h3 class="kalender-h3">Hver onsdag</h3></div>
+            <p class="kalender-sted">
+                Brødkompaniet i Svendborg<br>
+                Kl. 10 - 14 <br>
+            </p>
+        </div>
+        
+        </div>
+        </article>
 
     <footer class="footer">
         <img src="images/footer.svg" alt="bølger markblomst" class="footerbolge">
