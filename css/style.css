@@ -13,7 +13,7 @@
 }
 
 
-h4 {
+.overskrift2 {
     width: 90%;
     font-size: 2em;
     margin-top: 0%;
@@ -25,7 +25,7 @@ h4 {
         padding-right: 5%;
 
 }
-h3 {
+.underoverskrift2 {
     font-size: 2em;
     margin-top: 0%;
     padding-top: 2%;
@@ -154,7 +154,7 @@ h3 {
         justify-content: center;
     }
 
-    h4 {
+    .overskrift2 {
         font-size: 2em;
         margin-top: 0%;
         padding-top: 2%;
