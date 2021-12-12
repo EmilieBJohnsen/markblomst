@@ -1,14 +1,14 @@
 :root {
     --groen: #2a5a43;
-    --beige: #e7e6d7; 
+    --beige: #e7e6d7;
     --lysgroen: #5c7860;
     --gul: #f9eb9e;
-  }
+}
 
 @font-face {
     font-family: 'du nord';
     src: url(/fonts/DuNord-Regular.otf);
-  }
+}
 
 .wrapper {
     max-width: 1600px;
@@ -39,7 +39,7 @@ body {
     position: absolute;
     left: 5%;
     top: 2%;
-    z-index: 100;
+    z-index: 200;
 }
 
 .boks {
@@ -48,7 +48,7 @@ body {
     opacity: 80%;
     height: 12em;
     width: 45%;
-    position:absolute;
+    position: absolute;
     top: 0%;
 }
 
@@ -56,15 +56,14 @@ body {
     color: var(--beige);
     font-family: 'HWT Artz';
     letter-spacing: 2px;
-
     width: 100%;
-    z-index: 200;
+    z-index: 150;
     position: absolute;
     text-align: center;
     top: 5%;
-    padding-top: 10%;
+    padding-top: 15%;
     margin: 0%;
-    font-family: 'hwt-artz',sans-serif;
+    font-family: 'hwt-artz', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 4em;
@@ -89,7 +88,7 @@ h2 {
     padding-top: 10%;
     padding-left: 8%;
     text-align: left;
-    font-family: 'hwt-artz',sans-serif;
+    font-family: 'hwt-artz', sans-serif;
     color: var(--gul);
 }
 
@@ -99,10 +98,8 @@ p {
     margin-top: 0%;
     margin-bottom: 0%;
     color: var(--beige);
-    font-family:'du nord';
+    font-family: 'du nord';
 }
-
-
 
 .sarabillede {
     width: 80%;
@@ -117,7 +114,7 @@ p {
 
 .nav-a {
     margin: 5%;
-    margin-top: 0%; 
+    margin-top: 0%;
 }
 
 .navigation {
@@ -144,7 +141,7 @@ p {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-family: 'hwt-artz',sans-serif;
+    font-family: 'hwt-artz', sans-serif;
     font-size: 2em;
     text-align: left;
     margin: 0%;
@@ -158,7 +155,7 @@ p {
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
-    
+
 }
 
 .popup {
@@ -199,14 +196,13 @@ p {
     bottom: -20px;
 }
 
-
-
 .footer {
     position: relative;
 }
 
 .footer-boks {
-    padding-top: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     width: 100%;
     height: 100px;
     background-color: var(--groen);
@@ -221,20 +217,31 @@ p {
     margin: 5%;
 }
 
+.footer-p {
+    font-family: 'du nord';
+    color: var(--beige);
+    font-size: 0.9em;
+}
+
 .kontakt {
     margin-left: 5%;
-    color: var(--beige);
-    font-family: 'du nord';
-    font-size: 0.9em;
     width: 70%;
     position: relative;
+
 }
 
 .somelogo {
-    position:absolute;
-    top: 3em;
+    position: absolute;
+    top: 4em;
     right: 4em;
     width: 8%;
+}
+
+.linktilig {
+    text-decoration: none;
+    color: var(--beige);
+    font-style: italic;
+
 }
 
 .footerbolge {
@@ -246,29 +253,33 @@ p {
 @media only screen and (min-width: 430px) {
     .somelogo {
         right: 6em;
+        top: 3em;
+        width: 9%;
     }
-
     .blomst {
         max-width: 35%;
     }
-
 }
 
 
 @media only screen and (min-width: 490px) {
     .somelogo {
-        max-width:36px;
+        max-width: 36px;
         right: 6em;
     }
 
+    .overskrift1 {
+        top: 5%;
+    }
+
     .kontakt {
-        width: 60%;
+        width: 70%;
     }
 }
 
 @media only screen and (min-width: 560px) {
     .kontakt {
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -317,15 +328,16 @@ p {
         font-family: 'du nord';
         font-size: 0.9em;
         position: relative;
+        width: 60%;
     }
-    
+
     .somelogo {
-        position:absolute;
+        position: absolute;
         top: 3em;
         right: 6em;
-        width: 8%;
+        width: 9%;
     }
-    
+
 }
 
 @media only screen and (min-width: 715px) {
@@ -340,17 +352,14 @@ p {
     }
 
     .somelogo {
-        right: 6em;
-    }
-
-    .kontakt {
-        width: 40%;
+        right: 8em;
     }
 
     .overskrift1 {
         font-size: 5em;
+        top: 5%;
+        padding-top: 10%;
     }
-
 }
 
 @media only screen and (min-width: 900px) {
@@ -379,7 +388,7 @@ p {
         position: absolute;
         text-align: center;
         z-index: 200;
-        top: 30%;
+        top: 55%;
         font-size: 2em;
         display: block;
     }
@@ -394,7 +403,7 @@ p {
     }
 
     .navigation-flex {
-       margin-top: 0%;
+        margin-top: 0%;
     }
 
     .nav-a {
@@ -402,12 +411,9 @@ p {
         margin-right: 1%;
     }
 
-    .somelogo {
-        right: 6em;
-    }
 
     .kontakt {
-        width: 30%;
+        width: 45%;
     }
 
     .footer-boks {
@@ -451,10 +457,17 @@ p {
         display: block;
     }
 
-    
+    .okologi {
+        width: 70px;
+        height: 70px;
+    }
 
     .footer-p {
         font-size: 1em;
+    }
+
+    .somelogo {
+        width: 10%;
     }
 }
 
@@ -484,7 +497,6 @@ p {
 
     .overskrift1 {
         font-size: 12em;
-        padding-top: 10%;
     }
 
     .sarabillede {
@@ -510,6 +522,7 @@ p {
 
     .footer-p {
         line-height: 1em;
+        font-size: 1.3em;
     }
 
     .popup {
@@ -520,10 +533,10 @@ p {
         line-height: 1em;
     }
 
-    
-
     .okologi {
         margin-bottom: 0%;
+        width: 80px;
+        height: 80px;
     }
 
 }
